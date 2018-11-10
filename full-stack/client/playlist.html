@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./playlist.css">
+  </head>
+
+  <body>
+    <div class="container centered">
+      <header>
+        <img src="./wistia-logo.png" height="40" />
+      </header>
+
+      <div class="main">
+        <div class="wistia_embed" style="width:640px;height:360px;"></div>
+        <ul id="medias" class="list--unstyled"></ul>
+      </div>
+    </div>
+
+    <template id="media-template">
+      <li class="media">
+        <a class="media-content link--unstyled" href="javascript:void(0)">
+          <img class="thumbnail"/>
+          <div class="description">
+            <div class="title"></div>
+            <div class="duration label--sm"></div>
+          </div>
+        </a>
+      </li>
+    </template>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./common.js"></script>
+    <script src="./playlist.js"></script>
+    <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+  </body>
+</html>

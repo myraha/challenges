@@ -1,0 +1,95 @@
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Overpass:300,400,600|Overpass+Mono:400,600);
+
+body {
+  background-color: #F7F6F4;
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.list--unstyled {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.link--unstyled {
+  color: unset;
+  text-decoration: none;
+}
+
+.button--unstyled {
+  background: unset;
+  border: unset;
+  border-radius: unset;
+  cursor: pointer;
+  font-family: unset;
+  font-size: inherit;
+  font-weight: unset;
+  line-height: inherit;
+  padding: unset;
+}
+
+.button--unstyled:hover,
+.button--unstyled:focus {
+  outline: unset;
+}
+
+.label--sm {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 13px;
+}
+
+.label--lg {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  display: none;
+  padding: 12px;
+}
+
+.modal--open {
+  display: block;
+  background-color: rgba(80, 80, 80, 0.6);
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal__button--close svg {
+  height: 12px;
+}
+
+.modal__button--close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.modal--inner {
+  background-color: white;
+  padding: 12px;
+}
+
+.modal__title {
+  font-size: 15px;
+  margin: 0;
+}

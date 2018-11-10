@@ -1,0 +1,38 @@
+body {
+  padding: 140px 80px;
+}
+
+header {
+  text-align: center;
+  margin: 80px auto;
+}
+
+.container {
+  background-color: white;
+  width: calc(100% - 160px);
+  padding: auto 80px;
+  padding-bottom: 60px;
+}
+
+.main {
+  display: flex;
+  padding: 0 60px;
+}
+
+.thumbnail {
+  height: 56px;
+  margin-right: 12px;
+}
+
+.wistia_embed {
+  margin-right: 48px;
+}
+
+.media {
+  margin-bottom: 12px;
+}
+
+.media-content {
+  display: flex;
+  align-items: center;
+}
